@@ -2,7 +2,7 @@
 #include "Plugboard.h"
 #include <map>;
 using namespace std;
-
+ 
 Plugboard::Plugboard(map<char, char> customPlugboardConfig)
 {
 	plugboardConfig = customPlugboardConfig;

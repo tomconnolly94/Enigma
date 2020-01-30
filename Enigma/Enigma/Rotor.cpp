@@ -3,16 +3,15 @@
 #include <string>
 #include <map>
 #include "Rotor.h"
+#include "Globals.h"
+
 using namespace std;
 
 Rotor::Rotor(string target_order)
 {
-	string normal_alphabet = "abcdefghijklmnopqrstuvwxyz";
-	string disordered_alphabet = target_order;
-
-	for(int i = 0; i < normal_alphabet.size(); ++i)
+	for(int i = 0; i < alphabet.size(); ++i)
 	{
-		rotor_mappings[normal_alphabet[i]] = disordered_alphabet[i];
+		rotor_mappings[alphabet[i]] = target_order[i];
 	};
 }
 
