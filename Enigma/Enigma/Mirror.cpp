@@ -8,7 +8,7 @@ using namespace std;
 
 Mirror::Mirror() {
 
-	for (int i = 0; i < alphabet.size(); ++i)
+	for (size_t i = 0; i < alphabet.size(); ++i)
 	{
 		mirror_mappings[alphabet[i]] = reverse_alphabet[i];
 	};
@@ -16,5 +16,7 @@ Mirror::Mirror() {
 
 char Mirror::get_translation(char letter)
 {
+
+	cout << "Mirror: " << letter << " >> " << mirror_mappings[letter] << endl;
 	return mirror_mappings[letter];
 }

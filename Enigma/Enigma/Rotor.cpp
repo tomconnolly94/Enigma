@@ -9,7 +9,7 @@ using namespace std;
 
 Rotor::Rotor(string target_order)
 {
-	for(int i = 0; i < alphabet.size(); ++i)
+	for(size_t i = 0; i < alphabet.size(); ++i)
 	{
 		rotor_mappings[alphabet[i]] = target_order[i];
 	};
@@ -44,6 +44,7 @@ void Rotor::increment_mappings()
 char Rotor::get_translation(char letter) 
 {
 	char translation = rotor_mappings[letter];
-	increment_mappings();
+	//increment_mappings();
+	cout << letter << " >> " << translation << endl;
 	return translation;
 }

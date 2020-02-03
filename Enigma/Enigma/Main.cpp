@@ -1,29 +1,42 @@
 #include <iostream>
 #include <map>
-#include "Plugboard.h"
-#include "Rotor.h"
 #include "EnigmaMachine.h"
+#include "EnigmaConfiguration.h"
+
 using namespace std;
-
-
-struct EnigmaConfiguration {
-    map<char, char> plugboardConfig;
-    string rotor1Config;
-    string rotor2Config;
-    string rotor3Config;
-};
+EnigmaConfiguration enigmaConfig;
 
 // main() is where program execution begins.
 int main() {
 
-    EnigmaConfiguration enigmaConfig;
-    enigmaConfig.plugboardConfig = { {'a', 'f'}, {'g', 'w'}, {'b', 'c'} };
-    enigmaConfig.rotor1Config = "bqcshvurlemyjnkigwoadxzfpt";
-    enigmaConfig.rotor2Config = "ncjvghmuakofpiqbwetldzrsxy";
-    enigmaConfig.rotor3Config = "ofctxirdmgeabkynphlwuzsqjv";
 
+    EnigmaConfiguration enigmaConfig
+    {
+        { {'a', 'f'}, {'g', 'w'}, {'b', 'c'} },
+        "bqcshvurlemyjnkigwoadxzfpt",
+        "ncjvghmuakofpiqbwetldzrsxy",
+        "ofctxirdmgeabkynphlwuzsqjv"
+    };
     
-    EnigmaMachine enigmaMachine(enigmaConfig);
+    EnigmaMachine enigmaMachine1(enigmaConfig);
+
+    char input1 = 'a';
+
+    char output1 = enigmaMachine1.get_translation(input1);
+
+    cout << "Input: " << input1 << endl;
+    cout << "Output: " << output1 << endl;
+
+
+
+    EnigmaMachine enigmaMachine2(enigmaConfig);
+
+    char input2 = 'o';
+
+    char output2 = enigmaMachine2.get_translation(input2);
+
+    cout << "Input: " << input2 << endl;
+    cout << "Output: " << output2 << endl;
 
     return 0;
 }

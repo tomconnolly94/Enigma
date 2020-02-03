@@ -16,6 +16,9 @@
     <Filter Include="Source Files\Components">
       <UniqueIdentifier>{10bf8ae1-5b04-465c-9189-87ef1edb9355}</UniqueIdentifier>
     </Filter>
+    <Filter Include="DataStructures">
+      <UniqueIdentifier>{f598ba9a-1cb0-47e1-962d-a01a23e2a09d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Plugboard.cpp">
@@ -35,6 +38,9 @@
     </ClCompile>
     <ClCompile Include="EnigmaMachine.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EnigmaConfiguration.h">
+      <Filter>DataStructures</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

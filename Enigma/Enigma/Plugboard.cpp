@@ -1,6 +1,6 @@
 #include <iostream>
 #include "Plugboard.h"
-#include <map>;
+#include <map>
 using namespace std;
  
 Plugboard::Plugboard(map<char, char> customPlugboardConfig)
@@ -21,6 +21,7 @@ char Plugboard::get_translation(char letter)
 
 	if (result_iterator != plugboardConfig.end())
 	{
+		cout << letter << " >> " << result_iterator->second << endl;
 		//element found;
 		return result_iterator->second;
 	}
