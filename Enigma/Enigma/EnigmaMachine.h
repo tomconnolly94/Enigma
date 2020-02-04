@@ -9,7 +9,7 @@ using namespace std;
 class EnigmaMachine {
 public:
 	EnigmaMachine(EnigmaConfiguration enigaConfig);
-	char get_translation(char letter);
+	string get_translation(string letter);
 
 private:
 	Plugboard plugboard;

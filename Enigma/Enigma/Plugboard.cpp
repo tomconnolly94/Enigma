@@ -7,7 +7,6 @@ Plugboard::Plugboard(map<char, char> customPlugboardConfig)
 {
 	plugboardConfig = customPlugboardConfig;
 
-	//add reverse mappings
 	map<char, char>::iterator it;
 	for (it = plugboardConfig.begin(); it != plugboardConfig.end(); it++)
 	{
@@ -21,8 +20,6 @@ char Plugboard::get_translation(char letter)
 
 	if (result_iterator != plugboardConfig.end())
 	{
-		cout << letter << " >> " << result_iterator->second << endl;
-		//element found;
 		return result_iterator->second;
 	}
 	return letter;

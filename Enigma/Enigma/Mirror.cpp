@@ -16,7 +16,5 @@ Mirror::Mirror() {
 
 char Mirror::get_translation(char letter)
 {
-
-	cout << "Mirror: " << letter << " >> " << mirror_mappings[letter] << endl;
 	return mirror_mappings[letter];
 }

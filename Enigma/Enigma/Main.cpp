@@ -20,9 +20,8 @@ int main() {
     
     EnigmaMachine enigmaMachine1(enigmaConfig);
 
-    char input1 = 'a';
-
-    char output1 = enigmaMachine1.get_translation(input1);
+    string input1 = "hello my name is tom it is nice to meet you how have you been i have been great it has been so long since we have seen each other";
+    string output1 = enigmaMachine1.get_translation(input1);
 
     cout << "Input: " << input1 << endl;
     cout << "Output: " << output1 << endl;
@@ -31,11 +30,9 @@ int main() {
 
     EnigmaMachine enigmaMachine2(enigmaConfig);
 
-    char input2 = 'o';
+    string output2 = enigmaMachine2.get_translation(output1);
 
-    char output2 = enigmaMachine2.get_translation(input2);
-
-    cout << "Input: " << input2 << endl;
+    cout << "Input: " << output1 << endl;
     cout << "Output: " << output2 << endl;
 
     return 0;
