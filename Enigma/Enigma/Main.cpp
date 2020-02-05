@@ -25,8 +25,7 @@ int main() {
 
     cout << "Input: " << input1 << endl;
     cout << "Output: " << output1 << endl;
-
-
+    cout << endl;
 
     EnigmaMachine enigmaMachine2(enigmaConfig);
 
@@ -34,6 +33,13 @@ int main() {
 
     cout << "Input: " << output1 << endl;
     cout << "Output: " << output2 << endl;
+
+    //analysis
+    for (size_t i = 0; i < input1.size(); ++i)
+    {
+        if (input1[i] == ' ') continue;
+        cout << input1[i] << " came out as " << output1[i] << endl;
+    };
 
     return 0;
 }

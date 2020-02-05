@@ -14,8 +14,7 @@ EnigmaMachine::EnigmaMachine(EnigmaConfiguration enigmaConfig) :
 
 string EnigmaMachine::get_translation(string input_phrase) {
 
-    cout << "before space remove: " << endl;
-    cout << input_phrase << endl;
+    // remove all spaces from the string before processing
     input_phrase.erase(
         remove_if(
             input_phrase.begin(), 
@@ -23,8 +22,6 @@ string EnigmaMachine::get_translation(string input_phrase) {
             ::isspace), 
         input_phrase.end()
     );
-    cout << "after space remove: " << endl;
-    cout << input_phrase << endl;
 
     string output_phrase = "";
 

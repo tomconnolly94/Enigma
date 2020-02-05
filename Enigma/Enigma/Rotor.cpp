@@ -32,36 +32,21 @@ void Rotor::increment_mappings()
 {
 	if (rotation_index <= 1) {
 
-		cout << "Increment triggered on rotor: " << rotor_index << endl;
-
 		char previous_value = 'X';
 
 		for (map<char, char>::iterator it = forward_rotor_mappings.begin(); it != forward_rotor_mappings.end(); ++it)
 		{
 			char current_value = it->second;
 			forward_rotor_mappings[it->first] = previous_value;
+			reverse_rotor_mappings[previous_value] = it->first;
 			previous_value = current_value;
 		}
 
 		forward_rotor_mappings[forward_rotor_mappings.begin()->first] = previous_value;
-
-		previous_value = 'X';
-
-		for (map<char, char>::reverse_iterator rev_it = reverse_rotor_mappings.rbegin(); rev_it != reverse_rotor_mappings.rend(); ++rev_it)
-		{
-			char current_value = rev_it->second;
-			reverse_rotor_mappings[rev_it->first] = previous_value;
-			previous_value = current_value;
-		}
-
-		reverse_rotor_mappings[reverse_rotor_mappings.end()->first] = previous_value;
+		reverse_rotor_mappings[previous_value] = forward_rotor_mappings.begin()->first;
 
 		rotation_index = original_rotation_index;
 	}
-
-	cout << "rotor_index: " << rotor_index << ", rotation_index: " << rotation_index;
-	cout << endl;
-
 	--rotation_index;
 }
 
