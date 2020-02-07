@@ -10,6 +10,7 @@ class EnigmaMachine {
 public:
 	EnigmaMachine(EnigmaConfiguration enigaConfig);
 	string get_translation(string letter);
+	string scrub_spaces(string input);
 
 private:
 	Plugboard plugboard;

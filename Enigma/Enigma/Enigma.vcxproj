@@ -152,6 +152,7 @@
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Globals.h" />
     <ClCompile Include="Mirror.cpp" />
+    <ClCompile Include="OutputAnalyser.cpp" />
     <ClCompile Include="Plugboard.cpp" />
     <ClCompile Include="Rotor.cpp" />
   </ItemGroup>
@@ -161,6 +162,7 @@
   <ItemGroup>
     <ClInclude Include="EnigmaMachine.h" />
     <ClInclude Include="Mirror.h" />
+    <ClInclude Include="OutputAnalyser.h" />
     <ClInclude Include="Plugboard.h" />
     <ClInclude Include="Rotor.h" />
   </ItemGroup>

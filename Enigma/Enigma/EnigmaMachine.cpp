@@ -14,14 +14,7 @@ EnigmaMachine::EnigmaMachine(EnigmaConfiguration enigmaConfig) :
 
 string EnigmaMachine::get_translation(string input_phrase) {
 
-    // remove all spaces from the string before processing
-    input_phrase.erase(
-        remove_if(
-            input_phrase.begin(), 
-            input_phrase.end(), 
-            ::isspace), 
-        input_phrase.end()
-    );
+    input_phrase = this->scrub_spaces(input_phrase);
 
     string output_phrase = "";
 
@@ -38,4 +31,17 @@ string EnigmaMachine::get_translation(string input_phrase) {
         output_phrase += character;
     }
     return output_phrase;
+}
+
+string EnigmaMachine::scrub_spaces(string input) {
+
+    // remove all spaces from the string before processing
+    input.erase(
+        remove_if(
+            input.begin(),
+            input.end(),
+            ::isspace),
+        input.end()
+    );
+    return input;
 }

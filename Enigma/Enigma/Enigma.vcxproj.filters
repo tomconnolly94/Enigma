@@ -19,6 +19,9 @@
     <Filter Include="DataStructures">
       <UniqueIdentifier>{f598ba9a-1cb0-47e1-962d-a01a23e2a09d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Analysis">
+      <UniqueIdentifier>{c96041ae-d919-4475-af54-dbececf7d0ed}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Plugboard.cpp">
@@ -42,6 +45,9 @@
     <ClCompile Include="EnigmaConfiguration.h">
       <Filter>DataStructures</Filter>
     </ClCompile>
+    <ClCompile Include="OutputAnalyser.cpp">
+      <Filter>Source Files\Analysis</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="gitignore" />
@@ -58,6 +64,9 @@
     </ClInclude>
     <ClInclude Include="EnigmaMachine.h">
       <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OutputAnalyser.h">
+      <Filter>Source Files\Analysis</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
