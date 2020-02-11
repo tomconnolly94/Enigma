@@ -16,14 +16,13 @@ namespace Components {
 		}
 	}
 
-	char Plugboard::get_translation(char letter)
+	void Plugboard::get_translation(char *letter)
 	{
-		map<char, char>::iterator result_iterator = plugboardConfig.find(letter);
+		map<char, char>::iterator result_iterator = plugboardConfig.find(*letter);
 
 		if (result_iterator != plugboardConfig.end())
 		{
-			return result_iterator->second;
+			*letter = result_iterator->second;
 		}
-		return letter;
 	}
 }

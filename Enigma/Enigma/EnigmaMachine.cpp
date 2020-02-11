@@ -19,15 +19,15 @@ string EnigmaMachine::get_translation(string input_phrase) {
     string output_phrase = "";
 
     for (char& character : input_phrase) {
-        character = plugboard.get_translation(character);
-        character = rotor1.get_forward_translation(character);
-        character = rotor2.get_forward_translation(character);
-        character = rotor3.get_forward_translation(character);
-        character = mirror.get_translation(character);
-        character = rotor3.get_reverse_translation(character);
-        character = rotor2.get_reverse_translation(character);
-        character = rotor1.get_reverse_translation(character);
-        character = plugboard.get_translation(character);
+        plugboard.get_translation(&character);
+        rotor1.get_forward_translation(&character);
+        rotor2.get_forward_translation(&character);
+        rotor3.get_forward_translation(&character);
+        mirror.get_translation(&character);
+        rotor3.get_reverse_translation(&character);
+        rotor2.get_reverse_translation(&character);
+        rotor1.get_reverse_translation(&character);
+        plugboard.get_translation(&character);
         output_phrase += character;
     }
     return output_phrase;

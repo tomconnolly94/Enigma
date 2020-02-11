@@ -15,8 +15,8 @@ namespace Components {
 		};
 	}
 
-	char Mirror::get_translation(char letter)
+	void Mirror::get_translation(char *letter)
 	{
-		return mirror_mappings[letter];
+		*letter = mirror_mappings[*letter];
 	}
 }

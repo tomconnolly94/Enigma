@@ -7,8 +7,8 @@ namespace Components {
 	public:
 		Rotor(string target_order, int rotor_index);
 		void dump_mappings();
-		char get_forward_translation(char letter);
-		char get_reverse_translation(char letter);
+		void get_forward_translation(char *letter);
+		void get_reverse_translation(char *letter);
 
 	private:
 		map<char, char> forward_rotor_mappings;

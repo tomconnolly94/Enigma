@@ -53,16 +53,14 @@ namespace Components {
 		--rotation_index;
 	}
 
-	char Rotor::get_forward_translation(char letter)
+	void Rotor::get_forward_translation(char *letter)
 	{
-		char translation = forward_rotor_mappings[letter];
-		return translation;
+		*letter = forward_rotor_mappings[*letter];
 	}
 
-	char Rotor::get_reverse_translation(char letter)
+	void Rotor::get_reverse_translation(char *letter)
 	{
-		char translation = reverse_rotor_mappings[letter];
+		*letter = reverse_rotor_mappings[*letter];
 		increment_mappings();
-		return translation;
 	}
 }
