@@ -5,7 +5,7 @@
 
 using namespace std;
 
-EnigmaMachine::EnigmaMachine(EnigmaConfiguration enigmaConfig) : 
+EnigmaMachine::EnigmaMachine(DataStructures::EnigmaConfiguration enigmaConfig) : 
     plugboard(enigmaConfig.plugboardConfig),
     rotor1(enigmaConfig.rotor1Config, 1),
     rotor2(enigmaConfig.rotor2Config, 2),

@@ -8,14 +8,14 @@ using namespace std;
 
 class EnigmaMachine {
 public:
-	EnigmaMachine(EnigmaConfiguration enigaConfig);
+	EnigmaMachine(DataStructures::EnigmaConfiguration enigaConfig);
 	string get_translation(string letter);
 	string scrub_spaces(string input);
 
 private:
-	components::Plugboard plugboard;
-	components::Rotor rotor1;
-	components::Rotor rotor2;
-	components::Rotor rotor3;
-	components::Mirror mirror;
+	Components::Plugboard plugboard;
+	Components::Rotor rotor1;
+	Components::Rotor rotor2;
+	Components::Rotor rotor3;
+	Components::Mirror mirror;
 };

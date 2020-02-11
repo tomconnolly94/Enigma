@@ -5,13 +5,12 @@
 #include "OutputAnalyser.h"
 
 using namespace std;
-EnigmaConfiguration enigmaConfig;
 
 // main() is where program execution begins.
 int main() {
-    OutputAnalyser outputAnalyser;
+    Analysis::OutputAnalyser outputAnalyser;
 
-    EnigmaConfiguration enigmaConfig
+    DataStructures::EnigmaConfiguration enigmaConfig
     {
         { {'a', 'f'}, {'g', 'w'}, {'b', 'c'} },
         "bqcshvurlemyjnkigwoadxzfpt",
@@ -27,25 +26,11 @@ int main() {
 
     outputAnalyser.run_analysis(input1, output1);
 
-    cout << "Input: " << input1 << endl;
-    cout << "Output: " << output1 << endl;
-    cout << endl;
-
     EnigmaMachine enigmaMachine2(enigmaConfig);
 
     string output2 = enigmaMachine2.get_translation(output1);
 
     outputAnalyser.run_analysis(output1, output2);
-
-    cout << "Input: " << output1 << endl;
-    cout << "Output: " << output2 << endl;
-
-    //analysis
-    for (size_t i = 0; i < input1.size(); ++i)
-    {
-        if (input1[i] == ' ') continue;
-        cout << input1[i] << " came out as " << output1[i] << endl;
-    };
 
     return 0;
 }

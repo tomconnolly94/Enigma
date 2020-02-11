@@ -6,7 +6,7 @@
 
 using namespace std;
 
-namespace components {
+namespace Components {
 	Mirror::Mirror() {
 
 		for (size_t i = 0; i < alphabet.size(); ++i)

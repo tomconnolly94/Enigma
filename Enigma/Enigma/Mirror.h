@@ -2,7 +2,7 @@
 
 using namespace std;
 
-namespace components {
+namespace Components {
 	class Mirror {
 	public:
 		Mirror();

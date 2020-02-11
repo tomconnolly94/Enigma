@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
 
-namespace components {
+namespace Components {
 	class Rotor {
 	public:
 		Rotor(string target_order, int rotor_index);

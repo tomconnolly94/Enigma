@@ -4,7 +4,7 @@
 
 using namespace std;
 
-namespace components {
+namespace Components {
 	class Plugboard {
 	public:
 		Plugboard(map<char, char> customPlugboardConfig);

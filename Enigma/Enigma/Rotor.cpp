@@ -8,7 +8,7 @@
 using namespace std;
 
 
-namespace components {
+namespace Components {
 
 	Rotor::Rotor(string target_order, int _rotor_index)
 	{

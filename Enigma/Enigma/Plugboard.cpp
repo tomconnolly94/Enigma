@@ -3,7 +3,7 @@
 #include <map>
 using namespace std;
 
-namespace components {
+namespace Components {
 
 	Plugboard::Plugboard(map<char, char> customPlugboardConfig)
 	{
