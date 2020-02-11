@@ -6,15 +6,17 @@
 
 using namespace std;
 
-Mirror::Mirror() {
+namespace components {
+	Mirror::Mirror() {
 
-	for (size_t i = 0; i < alphabet.size(); ++i)
+		for (size_t i = 0; i < alphabet.size(); ++i)
+		{
+			mirror_mappings[alphabet[i]] = reverse_alphabet[i];
+		};
+	}
+
+	char Mirror::get_translation(char letter)
 	{
-		mirror_mappings[alphabet[i]] = reverse_alphabet[i];
-	};
-}
-
-char Mirror::get_translation(char letter)
-{
-	return mirror_mappings[letter];
+		return mirror_mappings[letter];
+	}
 }

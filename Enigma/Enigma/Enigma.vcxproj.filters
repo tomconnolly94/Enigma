@@ -16,11 +16,11 @@
     <Filter Include="Source Files\Components">
       <UniqueIdentifier>{10bf8ae1-5b04-465c-9189-87ef1edb9355}</UniqueIdentifier>
     </Filter>
-    <Filter Include="DataStructures">
-      <UniqueIdentifier>{f598ba9a-1cb0-47e1-962d-a01a23e2a09d}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\Analysis">
       <UniqueIdentifier>{c96041ae-d919-4475-af54-dbececf7d0ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\DataStructures">
+      <UniqueIdentifier>{f598ba9a-1cb0-47e1-962d-a01a23e2a09d}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -43,7 +43,7 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="EnigmaConfiguration.h">
-      <Filter>DataStructures</Filter>
+      <Filter>Source Files\DataStructures</Filter>
     </ClCompile>
     <ClCompile Include="OutputAnalyser.cpp">
       <Filter>Source Files\Analysis</Filter>

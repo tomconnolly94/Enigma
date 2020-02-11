@@ -13,9 +13,9 @@ public:
 	string scrub_spaces(string input);
 
 private:
-	Plugboard plugboard;
-	Rotor rotor1;
-	Rotor rotor2;
-	Rotor rotor3;
-	Mirror mirror;
+	components::Plugboard plugboard;
+	components::Rotor rotor1;
+	components::Rotor rotor2;
+	components::Rotor rotor3;
+	components::Mirror mirror;
 };

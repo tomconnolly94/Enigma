@@ -4,11 +4,13 @@
 
 using namespace std;
 
-class Plugboard {
-public:
-	Plugboard(map<char, char> customPlugboardConfig);
-	char get_translation(char letter);
+namespace components {
+	class Plugboard {
+	public:
+		Plugboard(map<char, char> customPlugboardConfig);
+		char get_translation(char letter);
 
-private:
-	map<char, char> plugboardConfig;
-};
+	private:
+		map<char, char> plugboardConfig;
+	};
+}
