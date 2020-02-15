@@ -90,6 +90,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\tom\projects\enigma\Enigma\Enigma\webserver;C:\Users\tom\projects\enigma\Enigma\Enigma\webserver\base64;C:\Users\tom\projects\enigma\Enigma\Enigma\webserver\socket\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -155,6 +156,7 @@
     <ClCompile Include="OutputAnalyser.cpp" />
     <ClCompile Include="Plugboard.cpp" />
     <ClCompile Include="Rotor.cpp" />
+    <ClCompile Include="WebServer.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="gitignore" />
@@ -165,6 +167,7 @@
     <ClInclude Include="OutputAnalyser.h" />
     <ClInclude Include="Plugboard.h" />
     <ClInclude Include="Rotor.h" />
+    <ClInclude Include="WebServer.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
