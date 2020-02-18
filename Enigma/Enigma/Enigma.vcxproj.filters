@@ -22,17 +22,11 @@
     <Filter Include="Header Files\Analysis">
       <UniqueIdentifier>{74573d5b-4c43-46ac-814a-b0173ae6ddf3}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\WebHandling">
-      <UniqueIdentifier>{c4db9159-6e13-46b0-aa1e-0006eada5aee}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Header Files\Components">
       <UniqueIdentifier>{50294a14-f75d-41ac-adaf-6216bb27c8bd}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files\DataStructures">
       <UniqueIdentifier>{f598ba9a-1cb0-47e1-962d-a01a23e2a09d}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\WebHandling">
-      <UniqueIdentifier>{9f04beea-40bd-46e5-9e40-eda34a41eeec}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -60,9 +54,6 @@
     <ClCompile Include="Globals.h">
       <Filter>Header Files</Filter>
     </ClCompile>
-    <ClCompile Include="WebServer.cpp">
-      <Filter>Source Files\WebHandling</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="gitignore" />
@@ -82,9 +73,6 @@
     </ClInclude>
     <ClInclude Include="EnigmaMachine.h">
       <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="WebServer.h">
-      <Filter>Header Files\WebHandling</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

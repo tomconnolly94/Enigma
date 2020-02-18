@@ -4,7 +4,6 @@
 #include "EnigmaMachine.h"
 #include "EnigmaConfiguration.h"
 #include "OutputAnalyser.h"
-#include "WebServer.h"
 
 // main() is where program execution begins.
 int main() {
@@ -36,11 +35,7 @@ int main() {
     outputAnalyser.run_analysis(output1, output2);
 
     std::chrono::steady_clock::time_point end = std::chrono::steady_clock::now();
-    std::cout << "Time difference = " << std::chrono::duration_cast<std::chrono::microseconds>(end - begin).count() << "[nanoseconds]" << std::endl; // 57832
-
-    WebHandling::WebServer webserver;
-
-    int retCode = webserver.init();
+    std::cout << "Time taken: " << std::chrono::duration_cast<std::chrono::microseconds>(end - begin).count() << "[nanoseconds]" << std::endl; // 57832
 
     return 0;
 }
